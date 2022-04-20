@@ -9,7 +9,7 @@ import runner.RunCucumberTest;
 
 public class CadastroSteps extends RunCucumberTest {
 
-    CadastroPage cadastroPage = new CadastroPage(driver);
+    CadastroPage cadastroPage = new CadastroPage();
     String nome = "Tiago";
     String sobrenome = "Martins";
     String senha = "S&rv&re123";

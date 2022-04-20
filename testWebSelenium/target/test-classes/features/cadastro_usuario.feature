@@ -13,3 +13,11 @@
     Quando eu preencho o fomulario de cadastro
     E clico em registrar
     Então vejo a area logada do site
+
+  @cadastro-sucesso2
+  Cenario: Cadastrar novo usuário com sucesso
+    Dado que estou na tela de login
+    E acesso o cadastro de usuario
+    Quando eu preencho o fomulario de cadastro
+    E clico em registrar
+    Então vejo a area logada do site

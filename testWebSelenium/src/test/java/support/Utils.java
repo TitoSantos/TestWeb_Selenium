@@ -9,12 +9,12 @@ import java.util.Random;
 
 public class Utils extends RunCucumberTest {
 
-    public void waitElementBePresent(By element, Integer time) {
-        WebDriverWait wait = new WebDriverWait(driver, time);
+    public static void waitElementBePresent(By element, Integer time) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), time);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public String getRadomEmail() {
+    public static String randomEmail() {
 
         String email_init = "qacao_";
         String email_final = "@qacao.com.br";
@@ -28,10 +28,10 @@ public class Utils extends RunCucumberTest {
         return email_init+resultado+email_final;
     }
 
-    public void clicarEmObjeto(By element, Integer time){
-        WebDriverWait wait = new WebDriverWait(driver, time);
+    public static void clicarEmObjeto(By element, Integer time){
+        WebDriverWait wait = new WebDriverWait(getDriver(), time);
         wait.until(ExpectedConditions.elementToBeClickable(element));
-        driver.findElement(element).click();
+        getDriver().findElement(element).click();
         System.out.println("Ocorreu um clique no elemento: "+element);
     }
 }
