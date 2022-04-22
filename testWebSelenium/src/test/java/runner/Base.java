@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
 
-    static WebDriver driver;
+    public static WebDriver driver;
 
     public enum Browser {
         CHROME, FIREFOX
